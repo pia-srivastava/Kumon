@@ -17,10 +17,12 @@
 		10290ABE18B1E23B002CFADD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABD18B1E23B002CFADD /* Security.framework */; };
 		10290AC018B1E245002CFADD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABF18B1E245002CFADD /* StoreKit.framework */; };
 		10290AC218B1E252002CFADD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AC118B1E252002CFADD /* SystemConfiguration.framework */; };
-		10290ACA18B1E817002CFADD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AC918B1E817002CFADD /* Parse.framework */; };
 		108D5E0618B14C0900F89938 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108D5E0418B14C0900F89938 /* LoginViewController.m */; };
 		108D5E0918B14E3400F89938 /* kumon.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0818B14E3400F89938 /* kumon.png */; };
 		108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0A18B14E7F00F89938 /* kumonFace.png */; };
+		DC16802018B7FA8A000BB982 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */; };
+		DC16802418B7FCAC000BB982 /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC16802318B7FCAC000BB982 /* LoginAssets.xcassets */; };
+		DCB51AED18B84A54008E475B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB51AEC18B84A54008E475B /* Parse.framework */; };
 		DCFFE5B518A97DB100AAEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */; };
 		DCFFE5B718A97DB100AAEBA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */; };
 		DCFFE5B918A97DB100AAEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B818A97DB100AAEBA5 /* UIKit.framework */; };
@@ -56,13 +58,15 @@
 		10290ABD18B1E23B002CFADD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		10290ABF18B1E245002CFADD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		10290AC118B1E252002CFADD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		10290AC918B1E817002CFADD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		108D5E0318B14C0900F89938 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		108D5E0418B14C0900F89938 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		108D5E0818B14E3400F89938 /* kumon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumon.png; sourceTree = "<group>"; };
 		108D5E0A18B14E7F00F89938 /* kumonFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumonFace.png; sourceTree = "<group>"; };
 		C5C6291089EA4BD284615C1F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D8731EEC32584D738E5EFC1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		DC16802318B7FCAC000BB982 /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
+		DCB51AEC18B84A54008E475B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DCFFE5B118A97DB100AAEBA5 /* KumonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,17 +91,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10290ACA18B1E817002CFADD /* Parse.framework in Frameworks */,
 				10290AC218B1E252002CFADD /* SystemConfiguration.framework in Frameworks */,
 				10290AC018B1E245002CFADD /* StoreKit.framework in Frameworks */,
 				10290ABE18B1E23B002CFADD /* Security.framework in Frameworks */,
 				10290ABC18B1E230002CFADD /* QuartzCore.framework in Frameworks */,
+				DCB51AED18B84A54008E475B /* Parse.framework in Frameworks */,
 				10290ABA18B1E226002CFADD /* MobileCoreServices.framework in Frameworks */,
 				10290AB818B1E21C002CFADD /* libz.dylib in Frameworks */,
 				10290AB618B1E20F002CFADD /* CoreLocation.framework in Frameworks */,
 				DCFFE5B718A97DB100AAEBA5 /* CoreGraphics.framework in Frameworks */,
 				10290AB418B1E1FA002CFADD /* CFNetwork.framework in Frameworks */,
 				10290AB218B1E1F0002CFADD /* AudioToolbox.framework in Frameworks */,
+				DC16802018B7FA8A000BB982 /* FacebookSDK.framework in Frameworks */,
 				DCFFE5B918A97DB100AAEBA5 /* UIKit.framework in Frameworks */,
 				DCFFE5B518A97DB100AAEBA5 /* Foundation.framework in Frameworks */,
 				010C8FD247D4461B997DC5B5 /* libPods.a in Frameworks */,
@@ -120,7 +125,7 @@
 		DCFFE5A818A97DB100AAEBA5 = {
 			isa = PBXGroup;
 			children = (
-				10290AC918B1E817002CFADD /* Parse.framework */,
+				DC16802318B7FCAC000BB982 /* LoginAssets.xcassets */,
 				DCFFE5BA18A97DB100AAEBA5 /* KumonApp */,
 				DCFFE5D918A97DB100AAEBA5 /* KumonAppTests */,
 				DCFFE5B318A97DB100AAEBA5 /* Frameworks */,
@@ -141,6 +146,8 @@
 		DCFFE5B318A97DB100AAEBA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCB51AEC18B84A54008E475B /* Parse.framework */,
+				DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */,
 				10290AC118B1E252002CFADD /* SystemConfiguration.framework */,
 				10290ABF18B1E245002CFADD /* StoreKit.framework */,
 				10290ABD18B1E23B002CFADD /* Security.framework */,
@@ -286,6 +293,7 @@
 				DCFFE5BF18A97DB100AAEBA5 /* InfoPlist.strings in Resources */,
 				DCFFE5C818A97DB100AAEBA5 /* Main.storyboard in Resources */,
 				108D5E0918B14E3400F89938 /* kumon.png in Resources */,
+				DC16802418B7FCAC000BB982 /* LoginAssets.xcassets in Resources */,
 				108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,11 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Pia/ios/Week5-Kumon/KumonApp/KumonApp",
-					"/Pia/ios/Week5-Kumon/KumonApp",
-				);
+				FRAMEWORK_SEARCH_PATHS = "/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
 				INFOPLIST_FILE = "KumonApp/KumonApp-Info.plist";
@@ -487,11 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Pia/ios/Week5-Kumon/KumonApp/KumonApp",
-					"/Pia/ios/Week5-Kumon/KumonApp",
-				);
+				FRAMEWORK_SEARCH_PATHS = "/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
 				INFOPLIST_FILE = "KumonApp/KumonApp-Info.plist";
