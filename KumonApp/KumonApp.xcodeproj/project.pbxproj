@@ -22,7 +22,11 @@
 		108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0A18B14E7F00F89938 /* kumonFace.png */; };
 		DC16802018B7FA8A000BB982 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */; };
 		DC16802418B7FCAC000BB982 /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC16802318B7FCAC000BB982 /* LoginAssets.xcassets */; };
+		DCABEA5A18B86E5100924283 /* AssignmentsPage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCABEA5918B86E5100924283 /* AssignmentsPage.xcassets */; };
+		DCABEA5D18B8713B00924283 /* AssignmentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCABEA5C18B8713B00924283 /* AssignmentsTableViewController.m */; };
 		DCB51AED18B84A54008E475B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB51AEC18B84A54008E475B /* Parse.framework */; };
+		DCE9B69B18B96A0400C20E6B /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B69A18B96A0400C20E6B /* MyCell.xib */; };
+		DCE9B69E18B96A3C00C20E6B /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B69D18B96A3C00C20E6B /* MyCell.m */; };
 		DCFFE5B518A97DB100AAEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */; };
 		DCFFE5B718A97DB100AAEBA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */; };
 		DCFFE5B918A97DB100AAEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B818A97DB100AAEBA5 /* UIKit.framework */; };
@@ -66,7 +70,13 @@
 		D8731EEC32584D738E5EFC1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DC16802318B7FCAC000BB982 /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
+		DCABEA5918B86E5100924283 /* AssignmentsPage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssignmentsPage.xcassets; sourceTree = "<group>"; };
+		DCABEA5B18B8713B00924283 /* AssignmentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentsTableViewController.h; sourceTree = "<group>"; };
+		DCABEA5C18B8713B00924283 /* AssignmentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentsTableViewController.m; sourceTree = "<group>"; };
 		DCB51AEC18B84A54008E475B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DCE9B69A18B96A0400C20E6B /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		DCE9B69C18B96A3C00C20E6B /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		DCE9B69D18B96A3C00C20E6B /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		DCFFE5B118A97DB100AAEBA5 /* KumonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +135,10 @@
 		DCFFE5A818A97DB100AAEBA5 = {
 			isa = PBXGroup;
 			children = (
+				DCE9B69C18B96A3C00C20E6B /* MyCell.h */,
+				DCE9B69D18B96A3C00C20E6B /* MyCell.m */,
+				DCE9B69A18B96A0400C20E6B /* MyCell.xib */,
+				DCABEA5918B86E5100924283 /* AssignmentsPage.xcassets */,
 				DC16802318B7FCAC000BB982 /* LoginAssets.xcassets */,
 				DCFFE5BA18A97DB100AAEBA5 /* KumonApp */,
 				DCFFE5D918A97DB100AAEBA5 /* KumonAppTests */,
@@ -171,6 +185,8 @@
 			children = (
 				108D5E0318B14C0900F89938 /* LoginViewController.h */,
 				108D5E0418B14C0900F89938 /* LoginViewController.m */,
+				DCABEA5B18B8713B00924283 /* AssignmentsTableViewController.h */,
+				DCABEA5C18B8713B00924283 /* AssignmentsTableViewController.m */,
 				108D5E0A18B14E7F00F89938 /* kumonFace.png */,
 				108D5E0818B14E3400F89938 /* kumon.png */,
 				DCFFE5C318A97DB100AAEBA5 /* AppDelegate.h */,
@@ -290,9 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFFE5CD18A97DB100AAEBA5 /* Images.xcassets in Resources */,
+				DCE9B69B18B96A0400C20E6B /* MyCell.xib in Resources */,
 				DCFFE5BF18A97DB100AAEBA5 /* InfoPlist.strings in Resources */,
 				DCFFE5C818A97DB100AAEBA5 /* Main.storyboard in Resources */,
 				108D5E0918B14E3400F89938 /* kumon.png in Resources */,
+				DCABEA5A18B86E5100924283 /* AssignmentsPage.xcassets in Resources */,
 				DC16802418B7FCAC000BB982 /* LoginAssets.xcassets in Resources */,
 				108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */,
 			);
@@ -346,8 +364,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCABEA5D18B8713B00924283 /* AssignmentsTableViewController.m in Sources */,
 				108D5E0618B14C0900F89938 /* LoginViewController.m in Sources */,
 				DCFFE5C518A97DB100AAEBA5 /* AppDelegate.m in Sources */,
+				DCE9B69E18B96A3C00C20E6B /* MyCell.m in Sources */,
 				DCFFE5C118A97DB100AAEBA5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
