@@ -95,20 +95,43 @@ return;
 		self.NameText = (UITextField*)[self.view viewWithTag:1];
 		
 	}
-	
+
+    //For debugging--gets back all the data within a class name
+//    PFQuery *query = [PFQuery queryWithClassName:@"Student"];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error) {
+//            NSLog(@"Objects: [%@]", objects);
+//            for (NSString *object in objects) {
+//                //[array valueForKey:specifyingKey]
+//                NSLog(@"username is [%@]",[objects valueForKey:@"UserName"]);
+//                NSLog(@"password is [%@]",[objects valueForKey:@"Password"]);
+//            }
+//            // The find succeeded. The first 100 objects are available in objects
+//        } else {
+//            // Log details of the failure
+//            NSLog(@"Error: %@ %@", error, [error userInfo]);
+//        }
+//    }];
+
+    
+	NSLog(@"self.NameText.text is %@", self.NameText.text);
+   	NSLog(@"self.PasswordText.text is %@", self.PasswordText.text);
+    
 	// Check if userName and password is in the Parser DB
 	if (textField.tag == 2) { // if password was entered
 		self.PasswordText = (UITextField*) [self.view viewWithTag:2];
 		PFQuery *query = [PFQuery queryWithClassName:@"Student"];
-		[query whereKey:@"Username" equalTo:self.NameText.text];
+		[query whereKey:@"UserName" equalTo:self.NameText.text];
 		[query whereKey:@"Password" equalTo:self.PasswordText.text];
 		[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-			if (!error) {
+			if (!error && objects && objects.count == 1) {
 				//Success in finding user
+                NSLog(@"ObjectsAgain: [%@]", objects);
 				NSLog(@"User was found. OBject count = %d", objects.count);
 			} else {
-				// Ned to think abou
+				// Ned to think about what to do if invalid username/password
 				NSLog(@"Username is not in DB");
+                
 				
 			}
 		}];

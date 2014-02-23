@@ -17,6 +17,8 @@
 		10290ABE18B1E23B002CFADD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABD18B1E23B002CFADD /* Security.framework */; };
 		10290AC018B1E245002CFADD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABF18B1E245002CFADD /* StoreKit.framework */; };
 		10290AC218B1E252002CFADD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AC118B1E252002CFADD /* SystemConfiguration.framework */; };
+		105BD6E418BA91A20033FAA3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105BD6E318BA91A20033FAA3 /* Parse.framework */; };
+		105BD6E618BAB3950033FAA3 /* kumonLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 105BD6E518BAB3950033FAA3 /* kumonLogo.png */; };
 		108D5E0618B14C0900F89938 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108D5E0418B14C0900F89938 /* LoginViewController.m */; };
 		108D5E0918B14E3400F89938 /* kumon.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0818B14E3400F89938 /* kumon.png */; };
 		108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0A18B14E7F00F89938 /* kumonFace.png */; };
@@ -62,6 +64,8 @@
 		10290ABD18B1E23B002CFADD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		10290ABF18B1E245002CFADD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		10290AC118B1E252002CFADD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		105BD6E318BA91A20033FAA3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		105BD6E518BAB3950033FAA3 /* kumonLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumonLogo.png; sourceTree = "<group>"; };
 		108D5E0318B14C0900F89938 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		108D5E0418B14C0900F89938 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		108D5E0818B14E3400F89938 /* kumon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumon.png; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				10290ABC18B1E230002CFADD /* QuartzCore.framework in Frameworks */,
 				DCB51AED18B84A54008E475B /* Parse.framework in Frameworks */,
 				10290ABA18B1E226002CFADD /* MobileCoreServices.framework in Frameworks */,
+				105BD6E418BA91A20033FAA3 /* Parse.framework in Frameworks */,
 				10290AB818B1E21C002CFADD /* libz.dylib in Frameworks */,
 				10290AB618B1E20F002CFADD /* CoreLocation.framework in Frameworks */,
 				DCFFE5B718A97DB100AAEBA5 /* CoreGraphics.framework in Frameworks */,
@@ -135,6 +140,7 @@
 		DCFFE5A818A97DB100AAEBA5 = {
 			isa = PBXGroup;
 			children = (
+				105BD6E318BA91A20033FAA3 /* Parse.framework */,
 				DCE9B69C18B96A3C00C20E6B /* MyCell.h */,
 				DCE9B69D18B96A3C00C20E6B /* MyCell.m */,
 				DCE9B69A18B96A0400C20E6B /* MyCell.xib */,
@@ -192,6 +198,7 @@
 				DCFFE5C318A97DB100AAEBA5 /* AppDelegate.h */,
 				DCFFE5C418A97DB100AAEBA5 /* AppDelegate.m */,
 				DCFFE5C618A97DB100AAEBA5 /* Main.storyboard */,
+				105BD6E518BAB3950033FAA3 /* kumonLogo.png */,
 				DCFFE5CC18A97DB100AAEBA5 /* Images.xcassets */,
 				DCFFE5BB18A97DB100AAEBA5 /* Supporting Files */,
 			);
@@ -310,6 +317,7 @@
 				DCFFE5BF18A97DB100AAEBA5 /* InfoPlist.strings in Resources */,
 				DCFFE5C818A97DB100AAEBA5 /* Main.storyboard in Resources */,
 				108D5E0918B14E3400F89938 /* kumon.png in Resources */,
+				105BD6E618BAB3950033FAA3 /* kumonLogo.png in Resources */,
 				DCABEA5A18B86E5100924283 /* AssignmentsPage.xcassets in Resources */,
 				DC16802418B7FCAC000BB982 /* LoginAssets.xcassets in Resources */,
 				108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */,
@@ -496,7 +504,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp",
+					"/Pia/ios/Week5-KumonAgain/Kumon/KumonApp",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
 				INFOPLIST_FILE = "KumonApp/KumonApp-Info.plist";
@@ -511,7 +522,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp",
+					"/Pia/ios/Week5-KumonAgain/Kumon/KumonApp",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
 				INFOPLIST_FILE = "KumonApp/KumonApp-Info.plist";
