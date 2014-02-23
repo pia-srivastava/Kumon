@@ -32,8 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 	
-	self.navigationController.navigationBar.hidden = YES;
-	
+//	self.navigationController.navigationBar.hidden = YES;
+//	UIImage *image = [UIImage imageNamed:@"kumonLogo.png"];
+//    UINavigationBar *navBar = self.navigationController.navigationBar;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"kumonLogo.png"] forBarMetrics:UIBarMetricsDefault];
+    
 	[self.nameTextField setBackgroundColor:[UIColor clearColor]];
 	self.nameTextField.borderStyle = UITextBorderStyleNone;
 	self.nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
