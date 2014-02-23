@@ -7,11 +7,10 @@
 //
 
 #import "LoginViewController.h"
+#import "AssignmentsTableViewController.h"
 #import <Parse/Parse.h>
 
 @interface LoginViewController ()
-
-- (IBAction)onLoginButton:(id)sender;
 @property (nonatomic, strong) UITextField *NameText;
 @property (nonatomic, strong) UITextField *PasswordText;
 
@@ -49,6 +48,8 @@
 	self.passwordTextField.tag = 2;
 	self.passwordTextField.delegate = self;
 	
+	/*[self.loginButton addTarget:self action:@selector(loginButtonPressed:) forControlEvents:UIControlEventTouchUpInside];*/
+	
 		
 }
 
@@ -58,6 +59,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 - (IBAction)onLoginButton:(id)sender {
     
     NSLog(@"onLoginButton") ;
@@ -66,6 +68,7 @@
     [testObject saveInBackground];
     //Go to Parse
 }
+ */
 
 
 #pragma - TextField Delegates
@@ -102,7 +105,7 @@ return;
 		[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
 			if (!error) {
 				//Success in finding user
-				NSLog(@"User was found");
+				NSLog(@"User was found. OBject count = %d", objects.count);
 			} else {
 				// Ned to think abou
 				NSLog(@"Username is not in DB");
@@ -142,4 +145,18 @@ return;
 }
 
 
+#pragma - Button function
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id) sender {
+	
+	NSLog(@"In Segue");
+	if ([segue.identifier isEqualToString:@"showAssignmentsTableSegue"]) {
+        
+        AssignmentsTableViewController *assignmentsTableViewController = segue.destinationViewController;
+        //assignmentsTableViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    }
+
+	
+	}
 @end

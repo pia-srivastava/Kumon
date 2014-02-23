@@ -14,8 +14,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [Parse setApplicationId:@"t2UaXfAhUnKs95ojlyksROmSemUTcI7lNS7OTxxU"
-                  clientKey:@"AetmW0k3hLi3kiCdOIZgvauyKebTGu6hPls6IJU2"];
+    [Parse setApplicationId:@"AEwCJLmH3ZOGk8V1Ixrcacp5ga46ZgVxYvmTvXFL"
+                  clientKey:@"O1OKJm70bwZLIQLMWWApaiXXrnhtQ15qmjfxxQDI"];
+	
+	
+	
+	// Login with user name
+	[PFUser logInWithUsernameInBackground:@"Malena Mesarina" password:@"wassi707" block:^(PFUser *user, NSError *error) {
+		if (!error) {
+			NSLog(@"Login successful");
+			
+		} else {
+			NSLog(@"Error login in");
+		}
+	}];
+	
     return YES;
 }
 							
